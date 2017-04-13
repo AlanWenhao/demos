@@ -1,0 +1,47 @@
+/*----------reset----------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/*------end-reset-------*/
+.c-tab {
+    width: 400px;
+    border: 1px dashed #ddd;
+}
+
+.c-tab .c-tabs__list {
+    height: 40px;
+}
+
+.c-tab .c-tabs__tab {
+    height: 40px;
+    float: left;
+    padding: 0 15px;
+
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.c-tab .c-tabs__more {
+    float: right;
+    line-height: 40px;
+}
+
+.c-tab .board-box {}
+
+.c-tab .c-tabs__panel {
+    height: 300px;
+    background: #eee;
+}
