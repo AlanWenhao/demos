@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo-1</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .aaa {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        .bbb {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="radio" id="one" value="aaa" v-model="v">
+        <label for="one">笑脸</label>&nbsp;&nbsp;
+        <input type="radio" id="two" value="bbb" v-model="v">
+        <label for="two">信息</label>
+        <div class="{{ v }}">{{ text }}</div>
+    </div>
+    <script>
+        var dataList = {
+            v: 'aaa',
+            text: 'welcome'
+        }
+        var vm = new Vue( {
+            el: '#app',
+            data: dataList
+        } )
+    </script>
+</body>
+</html>

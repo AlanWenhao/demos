@@ -13,6 +13,7 @@
             position: absolute;
             width: 2800px;
             color: white;
+
         }
         .clear:after {
             content: '';
@@ -25,6 +26,7 @@
             border: 2px dashed #ddd;
             margin: 200px auto 0;
             position: relative;
+            overflow: hidden;
         }
         li {
             float: left;
@@ -66,19 +68,23 @@
             var move = 0;
             var count = 0;
 
-            $('.pre').click(function(){
+
+            $('.next').click(function(){
                 count --;
                 move -= 400;
                 turn();
             });
 
-            $('.next').click(function(){
+            $('.pre').click(function(){
                 count ++;
                 move += 400;
                 turn();
             });
 
             function turn(){
+                if (){
+                    
+                }
                 $('.ul').stop().animate({left:move},1000);
             }
         });
@@ -87,11 +93,13 @@
 <body>
     <div id="box">
         <ul class="clear ul">
+            <li class="li5">55555555555555</li>
             <li class="li1">11111111111111</li>
             <li class="li2">22222222222222</li>
             <li class="li3">33333333333333</li>
             <li class="li4">44444444444444</li>
             <li class="li5">55555555555555</li>
+            <li class="li1">11111111111111</li>
         </ul>
     </div>
     <div class="wrapper clear">
