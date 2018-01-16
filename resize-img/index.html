@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <title>前端图片压缩</title>
+</head>
+<body>
+    <div class="container">
+        <section class="upload">
+            <input class="upload__input" type="file">
+        </section>
+        <section class="preview">
+            <img src="https://img.alicdn.com/simba/img/TB1o9mkeBLN8KJjSZFPSutoLXXa.jpg"
+                alt="" id="img"
+            >
+        </section>
+        <canvas id="canvas"></canvas>
+        <section class="note">
+            <ul>
+                <li>注意：因为img标签是异步加载的，所以记得使用onload，不然画的时候找不到图片资源</li>
+            </ul>
+        </section>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

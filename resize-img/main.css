@@ -1,0 +1,38 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ebebeb;
+}
+.container {
+    width: 1000px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 0 10px 0 #ffffff;
+}
+.upload {
+    height: 40px;
+    box-shadow: 0 0 3px 0 #ebebeb;
+}
+.upload__input {
+    position: relative;
+    top: 6px;
+    left: 10px;
+}
+
+.preview {
+    min-height: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 #ebebeb;
+}
+
+.note {
+    /* min-height: 100px; */
+    padding: 10px;
+    border-radius: 15px;
+    background: lightblue;
+}
